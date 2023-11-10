@@ -6,9 +6,6 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
-  // layout: {
-  //   title: '123'
-  // },
   routes: [
     {
       path: '/',
@@ -17,16 +14,19 @@ export default defineConfig({
     {
       name: '首页',
       path: '/home',
+      icon: 'Home',
       component: './Home',
     },
     {
       name: '测试',
       path: '/',
       component: './Layout',
+      layoutName: 'BasicLayout',
       routes: [
         {
           name: '权限演示',
           path: '/access',
+          icon: 'Home',
           component: './Access',
         },
         {
